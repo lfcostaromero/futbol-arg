@@ -34,15 +34,13 @@
     arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
   >
     
-    <!-- Light -->
-    <a-entity light="type: directional; color: #EEE; intensity: "10" position="1 1 1"></a-entity>
+    <a-entity light="type: directional; color: #EEE; intensity: 2" position="1 1 1"></a-entity>
+  
+    <a-assets>
+      <a-asset-item id="copa" src="https://cdn.glitch.global/6e629aa3-95c6-4495-85f4-5099cd224388/Libertadores-Low.glb?v=1654616577418"  shadow="receive: true" ></a-asset-item>
+    </a-assets>
     
-    <!-- upload world cup -->
-   <a-assets>
-      <a-asset-item id="copa" src="Libertadores-Low.glb"  shadow="receive: true" ></a-asset-item>
-    </a-assets> 
-    
-    <a-marker preset="hiro">
+   <a-marker preset="hiro">
       <a-entity id="loadingEl" gltf-model="#copa" animation-mixer scale="0.7 0.7 0.7" rotation = "-90 0 0"></a-entity>
     </a-marker>
     
@@ -57,8 +55,8 @@
       smooththreshold="5"
     >
       <a-entity
-        gltf-model="https://cdn.glitch.global/f6b0cf0b-4b40-40b0-bfe2-eca111b519b8/Wordl-Cup-Low.glb?v=1654541270693"
-        scale="10 10 10"
+        gltf-model="https://cdn.glitch.global/6e629aa3-95c6-4495-85f4-5099cd224388/Libertadores-Low.glb?v=1654616577418"
+        scale="30 30 30"
         rotation = "-90 0 0"
         position="0 0 0"
       >
@@ -67,3 +65,4 @@
     <a-entity camera></a-entity>
   </a-scene>
 </body>
+
